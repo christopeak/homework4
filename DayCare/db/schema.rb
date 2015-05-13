@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150507131506) do
+ActiveRecord::Schema.define(version: 20150512131417) do
 
   create_table "children", force: true do |t|
     t.string   "first_name"
@@ -31,6 +31,8 @@ ActiveRecord::Schema.define(version: 20150507131506) do
     t.integer  "max_size"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.string   "teacher_first_name"
+    t.string   "teacher_last_name"
   end
 
   create_table "waiting_list_entries", force: true do |t|
