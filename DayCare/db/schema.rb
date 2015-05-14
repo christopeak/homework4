@@ -11,12 +11,12 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150512131417) do
+ActiveRecord::Schema.define(version: 20150514025507) do
 
   create_table "children", force: true do |t|
     t.string   "first_name"
     t.string   "last_name"
-    t.integer  "class_id"
+    t.integer  "class_room_id"
     t.string   "parent_first_name"
     t.string   "parent_last_name"
     t.string   "phone"
@@ -36,7 +36,7 @@ ActiveRecord::Schema.define(version: 20150512131417) do
   end
 
   create_table "waiting_list_entries", force: true do |t|
-    t.integer  "class_id"
+    t.integer  "class_room_id"
     t.integer  "child_id"
     t.datetime "created_at"
     t.datetime "updated_at"
