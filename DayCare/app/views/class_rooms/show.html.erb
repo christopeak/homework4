@@ -1,0 +1,9 @@
+<h3>Classrooms</h3>
+<table><tr><th>Student Name</th></tr>
+<% @class_room.children.each do |c| %>
+    <tr>
+    <td><%= c.first_name %></td>
+    </tr>
+<% end %>
+</table>
+<h4>That is the classroom</h4>
